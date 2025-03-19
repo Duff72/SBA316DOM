@@ -1,5 +1,4 @@
 const list = app.appendChild(document.createElement("ul"));
-
 const addButton = document.getElementById("addButton");
 const alphabetize = document.getElementById("alphabetize");
 const clearBtn = document.getElementById("clearBtn");
