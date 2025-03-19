@@ -3,16 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>SBA 316</title>
   </head>
   <body>
-    <h1>SBA 316: The Document Object Model</h1>
-    <div id="app"></div>
-    <input type="text" id="addItem" /><button id="addButton">
-      Add Item To List
-    </button>
-    <br /><button id="alphabetize">Alphabetize</button>
-    <button id="clearBtn">Clear All</button>
+    <div class="list-container">
+      <h1>The Document Object Model</h1>
+      <p>
+        Add items to the list using the input field. Click list items to cross
+        them off.
+      </p>
+      <div id="app"></div>
+      <div>
+        <input type="text" id="addItem" /><button id="addButton">
+          Add Item To List
+        </button>
+        <br /><button id="alphabetize">Alphabetize</button>
+        <button id="clearBtn">Clear All</button>
+      </div>
+    </div>
+    <br />
+    <div class="form-container">
+      <div>
+        <h1>Register</h1>
+        <p>Please provide your information below.</p>
+
+        <!-- Registration Form -->
+        <form id="registration">
+          <input
+            name="username"
+            type="text"
+            placeholder="Username"
+            id="usernameField"
+          />
+
+          <input name="email" type="text" placeholder="Email" id="emailField" />
+          <br />
+
+          <input
+            name="password"
+            type="text"
+            placeholder="Password"
+            id="passwordField"
+          />
+
+          <input
+            name="passwordCheck"
+            type="text"
+            placeholder="Repeat Password"
+            id="passwordCheckField"
+          />
+          <br /><br />
+
+          <div class="flex-row">
+            <input name="terms" type="checkbox" id="terms" />
+            <label for="terms"
+              >I agree to the <a href="#">Terms of Use</a>.</label
+            >
+            <input type="submit" value="Register" id="registerButton" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="errorDisplay"></div>
     <script src="src/index.js"></script>
   </body>
 </html>
