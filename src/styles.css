@@ -14,8 +14,8 @@ body {
 .list-container {
     position: relative;
   background: #eee;
-  /* display: flex; */
-  margin: 30px 500px 30px 500px;
+
+  margin: 30px 400px 30px 400px;
     justify-content: center;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
 }
@@ -38,7 +38,7 @@ margin: 5px;
   background: #eee;
   display: flex;
 
-  margin: 30px 500px 30px 500px;
+  margin: 30px 400px 30px 400px;
     justify-content: center;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
   user-select: none;
@@ -54,7 +54,6 @@ margin: 5px;
   border-bottom: 1px solid lightgray;
 }
 .form-container form {
-  /* position: relative; */
   width: 100%;
   padding: 5px 10px;
 }
@@ -87,42 +86,27 @@ margin: 5px;
   align-items: center;
   cursor: pointer;
 }
-.form-container input[type="submit"] {
-  margin-left: auto;
-  font-weight: bold;
-  padding: 10px;
-  border: 1px solid #888;
-  border-radius: 5px;
-  background: #55ecfc;
-  cursor: pointer;
-}
-.form-container input[type="submit"]:hover {
-  background: #ffab40;
-}
-.form-container .input-icon {
-  /* position: absolute; */
-  left: 10px;
-  margin: 5px 0px;
-  width: 30px;
-  height: 29px;
-  background: #ddd;
-  outline: 1px solid #888;
-  border-right: 0px solid #0000;
-  border-radius: 5px 0px 0px 5px;
-  text-align: center;
-  line-height: 29px;
-}
-.form-container input:focus + .input-icon {
-  color: #ffab40;
-  outline: 2px solid #ffab40;
-  margin: 5px 0px;
-}
+
+
+button, .form-container input[type="submit"] {margin-left: auto;
+    
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background: #00b3ff;
+    cursor: pointer;}
+
+    button:hover, .form-container input[type="submit"]:hover {
+  background: #4043ff;}
+
+
+
 a {
   color: #0097a7;
   text-decoration: none;
 }
 a:hover {
-  color: #ffab40;
+  color: #764300;
 }
 #errorDisplay {
   position: relative;
